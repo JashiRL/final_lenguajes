@@ -6,7 +6,6 @@
           <v-card class="elevation-1 pa-3">
             <v-card-text>
               <div class="layout column align-center">
-                <img src="../../assets/img/clinica.png" alt="clinica logo" width="300" height="auto">
                 <h1 class="flex my-4" style="color: #4FB783!important;">CORNEA Clinic</h1>
               </div>
               <v-form 
@@ -85,6 +84,7 @@ export default {
             data: sendData
           }).then((res) => {
             if (res.data.alert === 'success'){
+              sessionStorage.setItem('email', this.userEmail)
               console.log(res)
               this.$router.push('/home')
             } else if (res.data.alert === 'Unregistered mail'){

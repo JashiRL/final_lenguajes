@@ -43,7 +43,7 @@ export default {
       <v-list-item link>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-            Dr. Perla Castro
+            Dr. CHimichanga
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
